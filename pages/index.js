@@ -9,6 +9,7 @@ export default function Home(data) {
       <Head>
         <title>Listen to the Radio!</title>
         <meta name="description" content="Listen to the Radio!" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <RadioPlayer radio={data} />

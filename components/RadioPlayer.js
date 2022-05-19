@@ -7,7 +7,7 @@ function RadioPlayer({ radio }) {
 
   let incNum = () => {
     if (num < 50) {
-      setNum(Number(num) + 1);
+      setNum(num + 1);
     }
   };
 
