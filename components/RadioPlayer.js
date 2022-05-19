@@ -23,13 +23,13 @@ function RadioPlayer({ radio }) {
 
   return (
     <div className="max-w-md m-auto">
-      <h1 className="text-center text-slate-900 tracking-wide text-4xl pt-5 font-semibold">
+      <h1 className=" text-center text-slate-900 tracking-wide text-4xl pt-5 font-semibold">
         {radio.data[num]?.name}
       </h1>
       <h3 className="text-slate-800 text-center">{radio.data[num]?.country}</h3>
       <ReactAudioPlayer
         src={radio.data[num]?.url_resolved}
-        autoPlay="true"
+        autoPlay={true}
         controls
         controlsList
         className="m-auto mt-4"

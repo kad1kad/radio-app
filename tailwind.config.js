@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Hind", "sans-serif"],
+      sans: ["Barlow", "sans-serif"],
+      serif: ["fraunces", "serif"],
     },
   },
   plugins: [],
