@@ -1,7 +1,7 @@
 export default {
-  fetchClassic: {
-    title: "Classic",
-    url: `/stations/byname/classic?limit=50`,
+  fetchClassical: {
+    title: "Classical",
+    url: `/stations/byname/classical?limit=50`,
   },
   fetchJazz: {
     title: "Jazz",
