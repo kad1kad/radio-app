@@ -22,7 +22,9 @@ export const getServerSideProps = async (ctx) => {
   const genre = ctx.query.genre;
 
   const radioRes = await fetch(
-    `http://de1.api.radio-browser.info/json${requests[genre].url}`
+    `https://de1.api.radio-browser.info/json${
+      requests[genre]?.url || requests.fetchClassic.url
+    }`
   );
   const data = await radioRes.json();
 
