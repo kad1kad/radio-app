@@ -3,8 +3,6 @@ import "react-h5-audio-player/lib/styles.css";
 import { useState } from "react";
 
 function RadioPlayer({ radio }) {
-  console.log(radio);
-
   const [num, setNum] = useState(0);
 
   let incNum = () => {
