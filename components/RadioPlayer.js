@@ -23,26 +23,35 @@ function RadioPlayer({ radio }) {
 
   return (
     <div className="max-w-md m-auto">
-      <h1 className="text-center text-xl mt-3 font-semibold">
-        {radio.data[num].name}
+      <h1 className="text-center text-slate-900 tracking-wide text-4xl pt-5 font-semibold">
+        {radio.data[num]?.name}
       </h1>
+      <h3 className="text-slate-800 text-center">{radio.data[num]?.country}</h3>
       <ReactAudioPlayer
-        src={radio.data[num].url_resolved}
-        autoPlay
+        src={radio.data[num]?.url_resolved}
+        autoPlay="true"
         controls
-        id={radio.data[num].name}
+        controlsList
         className="m-auto mt-4"
       />
 
-      <div className=" gap-5 mt-5 text-center">
-        <div className="text-xl bg-slate-200 px-5 rounded-3xl w-40 m-auto">
-          <button type="button" onClick={decNum}>
+      <div className="gap-5 mt-5 text-center">
+        <div className="text-xl bg-slate-300 px-5 rounded-3xl w-40 m-auto">
+          <button
+            type="button"
+            onClick={decNum}
+            className="text-slate-800 tracking-wider"
+          >
             Back
           </button>
         </div>
 
-        <div className="text-xl bg-slate-200 px-5 rounded-3xl w-40 m-auto mt-5">
-          <button type="button" onClick={incNum}>
+        <div className="text-xl bg-slate-300 px-5 rounded-3xl w-40 m-auto mt-5">
+          <button
+            type="button"
+            onClick={incNum}
+            className="text-slate-800 tracking-wider"
+          >
             Next
           </button>
         </div>

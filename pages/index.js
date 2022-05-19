@@ -5,7 +5,7 @@ import requests from "../utils/requests";
 
 export default function Home(data) {
   return (
-    <div className="">
+    <div className="min-h-screen bg-zinc-50">
       <Head>
         <title>Listen to the Radio!</title>
         <meta name="description" content="Listen to the Radio!" />

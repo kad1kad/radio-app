@@ -31,10 +31,6 @@ export default {
     title: "Metal",
     url: `/stations/byname/metal?limit=50`,
   },
-  fetchDeathMetal: {
-    title: "Death Metal",
-    url: `/stations/byname/death_metal?limit=50`,
-  },
   fetchHardRock: {
     title: "Hard Rock",
     url: `/stations/byname/hard_rock?limit=50`,
@@ -46,10 +42,6 @@ export default {
   fetchClassicRock: {
     title: "Classic Rock",
     url: `/stations/byname/classic_rock?limit=50`,
-  },
-  fetchNews: {
-    title: "News",
-    url: `/stations/byname/news?limit=50`,
   },
   fetchTalk: {
     title: "Funk",
@@ -78,5 +70,13 @@ export default {
   fetch00s: {
     title: "2000s",
     url: `/stations/byname/00s?limit=50`,
+  },
+  fetchHipHop: {
+    title: "HipHop",
+    url: `/stations/byname/hiphop?limit=50`,
+  },
+  fetchCountry: {
+    title: "Country",
+    url: `/stations/byname/country?limit=50`,
   },
 };
