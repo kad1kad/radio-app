@@ -23,6 +23,9 @@ function RadioPlayer({ radio }) {
 
   return (
     <div className="max-w-md m-auto">
+      <h1 className="text-center text-xl mt-3 font-semibold">
+        {radio.data[num].name}
+      </h1>
       <ReactAudioPlayer
         src={radio.data[num].url_resolved}
         autoPlay
@@ -31,9 +34,6 @@ function RadioPlayer({ radio }) {
         className="m-auto mt-4"
       />
 
-      <h1 className="text-center text-xl mt-3 font-semibold">
-        {radio.data[num].name}
-      </h1>
       <div className=" gap-5 mt-5 text-center">
         <div className="text-xl bg-slate-200 px-5 rounded-3xl w-40 m-auto">
           <button type="button" onClick={decNum}>
