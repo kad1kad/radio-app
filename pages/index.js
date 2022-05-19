@@ -5,7 +5,7 @@ import requests from "../utils/requests";
 
 export default function Home(data) {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Listen to the Radio!</title>
         <meta name="description" content="Listen to the Radio!" />
