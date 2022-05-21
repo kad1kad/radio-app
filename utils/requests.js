@@ -1,4 +1,4 @@
-export default {
+const requests = {
   fetchClassical: {
     title: "Classical",
     url: `/stations/byname/classical?limit=50`,
@@ -80,3 +80,5 @@ export default {
     url: `/stations/byname/country?limit=50`,
   },
 };
+
+export default requests;
