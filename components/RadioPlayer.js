@@ -36,21 +36,21 @@ function RadioPlayer({ radio }) {
       />
 
       <div className="gap-5 mt-5 text-center">
-        <div className="text-xl bg-slate-300 px-5 rounded-3xl w-40 m-auto">
+        <div className="text-xl bg-slate-900 px-5 py-2 rounded-xl w-40 m-auto transition-all hover:scale-105 hover:bg-slate-800 cursor-pointer">
           <button
             type="button"
             onClick={decNum}
-            className="text-slate-800 tracking-wider"
+            className="text-slate-100 tracking-wider"
           >
             Back
           </button>
         </div>
 
-        <div className="text-xl bg-slate-300 px-5 rounded-3xl w-40 m-auto mt-5">
+        <div className="text-xl bg-slate-900 px-5 py-2 rounded-xl w-40 m-auto mt-5 transition-all hover:scale-105 hover:bg-slate-800 cursor-pointer">
           <button
             type="button"
             onClick={incNum}
-            className="text-slate-800 tracking-wider"
+            className="text-slate-100 tracking-wider"
           >
             Next
           </button>
